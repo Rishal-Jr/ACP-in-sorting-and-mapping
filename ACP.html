@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>
+Mapping
+    </title>
+</head>
+
+<body>
+    <button onclick="ascending()">Ascending</button>
+    <button onclick="discending()">Discending</button>
+    <p id="result"></p>
+    <p id="ad"></p>
+    <script>
+        function ascending() {
+                newarray.sort(function (a, b) { return a - b });
+                document.getElementById("ad").innerHTML = newarray;
+            }
+            function discending() {
+                newarray.sort(function (a, b) { return b - a });
+                document.getElementById("ad").innerHTML = newarray;
+            }
+        var numbers=[28,6,19,95];
+        function myfunction(num){
+            return num*10;
+        }
+        var newarray=[numbers.map(myfunction)];
+document.getElementById("result").innerHTML="The product value is "+newarray;
+    </script>
+
+    </body>
+    </html>
